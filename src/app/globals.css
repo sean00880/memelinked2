@@ -141,7 +141,7 @@ span, a, h3, h4, h5, h6, button{
 
 h3 span{
   font-family:'Dragen';
-  font-size: 1.4rem;
+  font-size: 1rem;
 }
 
 .button{
@@ -157,12 +157,12 @@ span, button{
   font-family: 'Barlow';
 }
 p, li{
-  font-size: 1.2rem;
+  font-size: .8rem;
   font-family: 'titillium web';
 }
 
 table td{
-  font-size: 1.2rem;
+  font-size: .81rem;
   font-family: 'Barlow';
 
 }
@@ -203,7 +203,7 @@ h3{
 }
 
 h4 {
-  font-size:1.2rem;
+  font-size:15px;
 }
 
 h5{
@@ -482,7 +482,7 @@ section{
   --matt-black: #333333;
   /* Accent Colors */
   --green-accent: #ffeb78;
-  --purple-accent: #ff5555;
+  --red-accent: #ff5555;
 
     /* Background Colors */
     --dark-background: #090909;
@@ -1073,7 +1073,7 @@ Img{
     #313231
   );
   animation: rotate-gradient 5s linear infinite;
-  box-shadow: 0 0 12px rgb(225, 243, 215), 0 0 15px rgba(151, 223, 137, 0.6);
+  box-shadow: 0 0 12px rgba(255, 163, 5, 0.894), 0 0 15px rgba(220, 220, 220, 0.6);
 }
 
 .icon-orbit-container {
@@ -1106,7 +1106,7 @@ Img{
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  border: 1px solid #b4f8a1;
+  border: 1px solid #eab308;
 }
 
 .glassmorphism-effect2 {

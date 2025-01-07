@@ -12,7 +12,7 @@ export default function TopBar() {
   };
 
   return (
-    <div className="topbar flex items-center justify-between px-4 py-3 shadow-lg relative z-50 bg-gradient-to-b from-black via-[#191919] to-black">
+    <div className="topbar flex items-center justify-between px-4 py-3 shadow-lg relative z-50 bg-gradient-to-b from-black via-[#372347] to-black">
       {/* Hamburger Menu for Mobile */}
       <div className="flex md:hidden z-[60]">
         <button
