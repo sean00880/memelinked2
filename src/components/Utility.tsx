@@ -5,64 +5,71 @@ import Link from "next/link";
 
 const UtilitySection: React.FC = () => {
   return (
-    <section id="utilities" className="py-16 px-4 md:px-8 bg-gradient-to-b from-black via-[#1a1a1a] to-black text-white relative">
+    <section
+      id="utilities"
+      className="py-16 px-4 md:px-8 bg-gradient-to-b from-black via-[#1a1a1a] to-black text-white relative"
+    >
       {/* Background Glow */}
-      <div className="absolute inset-0 bg-gradient-to-b from-red-600 via-black to-black opacity-60 blur-2xl animate-pulse"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-black via-[#191919] to-black opacity-60 blur-2xl animate-pulse"></div>
 
       <div className="relative z-10 max-w-7xl mx-auto">
         {/* Section Title */}
-        <h2 className="text-4xl mb-12 text-center text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-white glitch-text">
-          Virtual Website Game Emulator
+        <h2 className="text-4xl mb-12 text-center bg-clip-text bg-gradient-to-r text-white">
+          MemeLinked Utilities
         </h2>
 
         {/* Utility Content */}
         <div className="flex flex-col gap-8 items-center">
-
-             {/* Right: Visual */}
-             <div className="relative flex justify-center">
+          {/* Right: Visual */}
+          <div className="relative flex justify-center">
             {/* Glitch Animation */}
             <div className="glitch-container">
               <Image
-                src="/images/virtual-emulator.png"
-                alt="Virtual Website Game Emulator"
+                src="/images/MLPreview.png"
+                alt="MemeLinked Utility Preview"
                 width={500}
                 height={400}
-                className="rounded-lg bg-[#0d0d0d] shadow-[0_0_20px_rgba(255,0,0,0.8)] hover:scale-105 transition-transform glitch-image"
+                className="rounded-lg bg-[#0d0d0d] shadow-[0_0_20px_rgba(0,255,128,0.8)] hover:scale-105 transition-transform glitch-image"
               />
               <div className="glitch-overlay"></div>
             </div>
           </div>
-          
+
           {/* Left: Content */}
           <div className="space-y-6 p-6 bg-black/70 rounded-xl backdrop-blur-lg shadow-lg glitch-box">
-            <h3 className="text-3xl font-semibold text-red-400 mb-4 glitch-title">Coming Soon</h3>
+            <h3 className="text-3xl font-semibold text-gray-200 mb-4 glitch-title">
+              Empower Your Online Presence
+            </h3>
             <p className="text-gray-300 leading-relaxed">
-              Step into the future with the Virtual Website Game Emulator—an immersive platform on the Sonic Chain. Seamlessly
-              blending interactive web-based gaming with blockchain integration, this utility pushes the boundaries of GameFi.
+              MemeLinked introduces cutting-edge utilities designed to elevate
+              your online visibility, engagement, and success. Harness the
+              power of a dynamic and community-driven platform built for the
+              next generation of blockchain innovators.
             </p>
             <ul className="list-disc list-inside space-y-3 text-gray-300 mt-4">
-              <li>Explore virtual gaming environments with real-time interaction.</li>
-              <li>Integrate blockchain-powered features seamlessly with Chaos Energy.</li>
-              <li>Experience ultra-fast transactions for GameFi projects.</li>
-              <li>Leverage community-driven enhancements for a dynamic experience.</li>
+              <li>Seamless meme marketing integration for virality.</li>
+              <li>Comprehensive influencer tools for organic growth.</li>
+              <li>Real-time analytics to optimize performance and reach.</li>
+              <li>
+                Scalable solutions to amplify your project's presence in Web3.
+              </li>
             </ul>
             <div className="mt-6">
               <Link
-                href="/"
-                className="inline-block px-6 py-3 bg-gradient-to-r from-red-500 to-white text-black font-semibold rounded-lg shadow-lg hover:scale-105 transition-transform neon-button"
+                href="#"
+                className="inline-block px-6 py-3 bg-gradient-to-r from-green-400 to-purple-400 text-black font-semibold rounded-lg shadow-lg hover:scale-105 transition-transform neon-button"
               >
                 Coming Soon
               </Link>
             </div>
           </div>
-
-       
         </div>
 
         {/* Bottom Visual */}
-        <div className="mt-12 p-4 text-center text-black bg-gradient-to-r from-red-500 to-white rounded-lg shadow-lg animate-glow">
-          <p className="text-sm font-mono glitch-text">
-            The Sonic Chain: Gaming meets blockchain in the most revolutionary way.
+        <div className="mt-12 p-4 text-center text-black bg-gradient-to-r from-green-400 to-purple-400 rounded-lg shadow-lg animate-glow">
+          <p className="text-md font-mono glitch-text">
+            MemeLinked: Revolutionizing blockchain utilities with creativity and
+            precision.
           </p>
         </div>
       </div>
@@ -71,7 +78,7 @@ const UtilitySection: React.FC = () => {
       <style jsx>{`
         .glitch-text {
           animation: glitch 1s infinite;
-          text-shadow: 2px 2px 5px rgba(255, 0, 0, 0.8), -2px -2px 5px rgba(0, 255, 255, 0.8);
+          text-shadow: 2px 2px 5px rgba(0, 255, 128, 0.8), -2px -2px 5px rgba(128, 0, 255, 0.8);
         }
 
         @keyframes glitch {
@@ -103,13 +110,13 @@ const UtilitySection: React.FC = () => {
 
         @keyframes glitch-title {
           0% {
-            text-shadow: 2px 2px 5px rgba(255, 0, 0, 0.8), -2px -2px 5px rgba(255, 255, 255, 0.8);
+            text-shadow: 2px 2px 5px rgba(0, 255, 128, 0.8), -2px -2px 5px rgba(128, 0, 255, 0.8);
           }
           50% {
-            text-shadow: 1px 1px 2px rgba(255, 0, 0, 0.5), -1px -1px 2px rgba(168, 255, 144, 0.97);
+            text-shadow: 1px 1px 2px rgba(0, 255, 128, 0.5), -1px -1px 2px rgba(128, 0, 255, 0.5);
           }
           100% {
-            text-shadow: 2px 2px 5px rgba(255, 0, 0, 0.8), -2px -2px 5px rgba(44, 41, 41, 0.8);
+            text-shadow: 2px 2px 5px rgba(0, 255, 128, 0.8), -2px -2px 5px rgba(128, 0, 255, 0.8);
           }
         }
 
@@ -142,7 +149,7 @@ const UtilitySection: React.FC = () => {
           left: 0;
           width: 100%;
           height: 100%;
-          background: linear-gradient(90deg, rgba(235, 235, 235, 0.9), rgba(234, 234, 234, 0.87));
+          background: linear-gradient(90deg, rgba(0, 255, 128, 0.2), rgba(128, 0, 255, 0.2));
           mix-blend-mode: overlay;
           animation: glitch-overlay 1s infinite;
         }
@@ -160,7 +167,7 @@ const UtilitySection: React.FC = () => {
         }
 
         .neon-button {
-          text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 0, 0, 0.6), 0 0 30px rgba(255, 0, 0, 0.4);
+          text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(0, 255, 128, 0.6), 0 0 30px rgba(128, 0, 255, 0.4);
         }
 
         .animate-glow {
@@ -169,10 +176,10 @@ const UtilitySection: React.FC = () => {
 
         @keyframes glow {
           0% {
-            box-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
+            box-shadow: 0 0 10px rgba(0, 255, 128, 0.8);
           }
           100% {
-            box-shadow: 0 0 20px rgba(255, 0, 0, 1);
+            box-shadow: 0 0 20px rgba(128, 0, 255, 1);
           }
         }
       `}</style>

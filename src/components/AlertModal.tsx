@@ -21,7 +21,7 @@ export default function AlertModal({ message, onClose }: AlertModalProps) {
         <p className="mb-4">{message}</p>
         <button
           onClick={onClose}
-          className="bg-yellow-700 text-white py-2 px-4 rounded hover:bg-yellow-600 transition"
+          className="bg-green-700 text-white py-2 px-4 rounded hover:bg-green-500 transition"
         >
           OK
         </button>

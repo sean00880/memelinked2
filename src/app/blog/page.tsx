@@ -22,7 +22,7 @@ export default function BlogPage() {
             </p>
             <a
               href={post.href}
-              className="text-yellow-400 hover:text-yellow-300 mt-4 inline-block transition"
+              className="text-green-400 hover:text-green-300 mt-4 inline-block transition"
             >
               Read more →
             </a>

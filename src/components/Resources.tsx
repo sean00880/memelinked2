@@ -38,7 +38,7 @@ const ResourcesSection: React.FC = () => {
       {/* Background Animation */}
       <div className="absolute inset-0 animate-pulse bg-gradient-to-b from-black via-green-700 to-purple-700 opacity-50 blur-2xl"></div>
 
-      <div className="relative z-10 max-w-6xl mx-auto">
+      <div className="relative z-10 max-w-7xl mx-auto">
         {/* Section Title */}
         <h2 className="text-4xl font-bold mb-8 text-center text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-purple-500">
           Resources

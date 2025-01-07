@@ -12,7 +12,7 @@ export default function TopBar() {
   };
 
   return (
-    <div className="topbar flex items-center justify-between px-4 py-3 shadow-lg relative z-50 bg-gradient-to-b from-red-600 to-black">
+    <div className="topbar flex items-center justify-between px-4 py-3 shadow-lg relative z-50 bg-gradient-to-b from-black via-[#191919] to-black">
       {/* Hamburger Menu for Mobile */}
       <div className="flex md:hidden z-[60]">
         <button
@@ -30,7 +30,7 @@ export default function TopBar() {
       <div className="flex-1 md:flex-none flex justify-center items-center">
         <Link href="/">
           <Image
-            src="/images/Logo.png"
+            src="/images/LOGODark.png"
             alt="Logo"
             width={240}
             height={40}
@@ -41,22 +41,22 @@ export default function TopBar() {
 
       {/* Desktop Navigation Links */}
       <nav className="hidden md:flex justify-end items-center space-x-4 lg:space-x-6 text-white">
-        <Link href="/#home" className="hover:text-red-400 transition">
+        <Link href="/#home" className="hover:text-purple-400 transition">
           Home
         </Link>
-        <Link href="/#about" className="hover:text-red-400 transition">
+        <Link href="/#about" className="hover:text-purple-400 transition">
           About
         </Link>
-        <Link href="/#utilities" className="hover:text-red-400 transition">
+        <Link href="/#utilities" className="hover:text-purple-400 transition">
           Utilities
         </Link>
-        <Link href="/#tokenomics" className="hover:text-red-400 transition">
+        <Link href="/#tokenomics" className="hover:text-purple-400 transition">
           Tokenomics
         </Link>
-        <Link href="/#roadmap" className="hover:text-red-400 transition">
+        <Link href="/#roadmap" className="hover:text-purple-400 transition">
           Roadmap
         </Link>
-        <Link href="/#resources" className="hover:text-red-400 transition">
+        <Link href="/#resources" className="hover:text-purple-400 transition">
           Resources
         </Link>
       </nav>
@@ -66,42 +66,42 @@ export default function TopBar() {
         <div className="absolute top-16 left-0 w-full bg-black text-white p-4 shadow-lg rounded-lg z-40">
           <Link
             href="/#home"
-            className="block px-4 py-2 hover:bg-red-700 rounded"
+            className="block px-4 py-2 hover:bg-purple-700 rounded"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             Home
           </Link>
           <Link
             href="/#about"
-            className="block px-4 py-2 hover:bg-red-700 rounded"
+            className="block px-4 py-2 hover:bg-purple-700 rounded"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             About
           </Link>
           <Link
             href="/#utilities"
-            className="block px-4 py-2 hover:bg-red-700 rounded"
+            className="block px-4 py-2 hover:bg-purple-700 rounded"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             Utilities
           </Link>
           <Link
             href="/#tokenomics"
-            className="block px-4 py-2 hover:bg-red-700 rounded"
+            className="block px-4 py-2 hover:bg-purple-700 rounded"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             Tokenomics
           </Link>
           <Link
             href="/#roadmap"
-            className="block px-4 py-2 hover:bg-red-700 rounded"
+            className="block px-4 py-2 hover:bg-purple-700 rounded"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             Roadmap
           </Link>
           <Link
             href="/#resources"
-            className="block px-4 py-2 hover:bg-red-700 rounded"
+            className="block px-4 py-2 hover:bg-purple-700 rounded"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             Resources

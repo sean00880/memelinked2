@@ -8,7 +8,7 @@ export default function ProgressBar({ currentStep, totalSteps }: ProgressBarProp
   const progress = (currentStep / totalSteps) * 100;
 
   return (
-      <div className="relative w-full h-4 mb-6 bg-opacity-20 backdrop-blur-md bg-white/10 rounded-full border border-yellow-300 shadow-lg shadow-yellow-500/50">
+      <div className="relative w-full h-4 mb-6 bg-opacity-20 backdrop-blur-md bg-white/10 rounded-full border border-green-300 shadow-lg shadow-green-600/50">
           {/* Background styling for glassmorphism */}
           <div
               className="absolute top-0 left-0 h-4 rounded-full"
@@ -21,7 +21,7 @@ export default function ProgressBar({ currentStep, totalSteps }: ProgressBarProp
               }}
           ></div>
           {/* Adding a holographic border and reflection effect */}
-          <div className="absolute top-0 left-0 w-full h-4 rounded-full border border-yellow-400/60 animate-pulse"></div>
+          <div className="absolute top-0 left-0 w-full h-4 rounded-full border border-green-400/60 animate-pulse"></div>
       </div>
   );
 }

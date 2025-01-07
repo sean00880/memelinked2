@@ -6,92 +6,124 @@ import Link from "next/link";
 const HeroSection: React.FC = () => {
   return (
     <section
-      className="hero-section flex items-center md:mt-0 h-screen justify-center bg-cover bg-center relative"
-      style={{ backgroundImage: "url('/images/sonic.gif')" }}
+      className=" flex items-center justify-center h-screen bg-cover bg-center relative"
+      style={{
+        backgroundImage: "url('/images/ML11.webp')", // Full-screen background pattern image
+        backgroundPosition: "center",
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+        backgroundAttachment: "fixed", // Fix the background image to avoid scrolling with the page
+      }}
     >
-      {/* Background Layer */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black via-[#1a1a1a] to-[#000] opacity-60"></div>
+      {/* Background Overlay to create a dark and subtle gradient */}
+      <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent bg-opacity-90"></div>
 
-      {/* Foreground Content */}
-      <div className="z-10 flex  w-full h-full">
-      
-        {/* Right Column */}
+      {/* Main Content Container */}
+      <div className="relative z-10 flex flex-col md:flex-row items-center justify-center w-full max-w-7xl px-6 md:px-12 space-y-8 md:space-y-0 md:space-x-8">
+        {/* Left Column: Presale Widget */}
         <div
-          className="relative pt-0 md:pt-[20vh] flex flex-col justify-center items-center text-white h-full w-full"
+          className="presale-widget flex flex-col justify-center items-center p-8 bg-white/90 backdrop-blur-lg rounded-xl shadow-xl text-center w-full md:w-1/2"
           style={{
-            background:
-              "linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.9))",
+            boxShadow: "0px 4px 15px rgba(0, 0, 0, 0.6), inset 0px 1px 2px rgba(255, 255, 255, 0.1)", // Neumorphic shadow for the card
           }}
         >
-          {/* Hero Image */}
+          {/* Title */}
+          <h2 className="text-3xl mb-4 text-black">
+            Join the Presale
+          </h2>
+          {/* Description */}
+          <p className="text-black mb-6 text-lg">
+            Be part of the revolution. Buy MemeLinked tokens and shape the
+            future!
+          </p>
+          {/* Button */}
+          <button
+            className="px-8 py-3 bg-gradient-to-r from-green-400 to-purple-500 text-white font-bold rounded-full shadow-lg hover:scale-105 hover:shadow-2xl transition-transform"
+          >
+            Buy Now
+          </button>
+        </div>
+
+        {/* Right Column: Project Info + Socials */}
+        <div
+          className="project-info flex flex-col justify-center items-center p-8 bg-black/90 backdrop-blur-xl rounded-xl shadow-xl text-center w-full md:w-1/2"
+          style={{
+            boxShadow: "0px 4px 15px rgba(0, 0, 0, 0.6), inset 0px 1px 2px rgba(38, 35, 35, 0.38)", // Neumorphic shadow for the card
+          }}
+        >
+          {/* Logo */}
           <Image
-            src="/images/ShadowLogo.png"
-            width={300}
-            height={300}
-            alt="Shadow the Hedgehog Icon"
-            className="w-[230px] mb-6 animate-pulse"
+            src="/images/MLLogo.png"
+            width={150}
+            height={150}
+            alt="MemeLinked Logo"
+            className="mb-6 rounded-full animate-pulse"
           />
 
-          {/* Subtitle */}
-          <p className="text-lg mb-6 leading-relaxed text-gray-300">
-            Harness the power of <strong className="text-red-600">Shadow</strong>. 
-            Embrace the <span className="text-red-600">Sonic Chain.</span>
+          {/* Title */}
+          <h1 className="text-5xl font-extrabold mb-2">
+          <span className="meme animate-glitch">Meme</span>
+          <span className="animate-glitch2">LINKED</span>
+        </h1>
+          {/* Description */}
+          <p className="text-gray-300 mb-4">
+            A DeFi project on Ethereum, part of the Monkey Sol Inu ecosystem,
+            where memes meet social media.
           </p>
 
-          {/* Contract Address with Animated Glow */}
-          <div className="relative flex items-center justify-center">
-            <div className="relative bg-white text-black px-6 py-3 rounded-lg font-bold shadow-xl z-10">
-              <span className="font-mono text-sm">
-                0xa115DD97F66d63cD44d56f6B4d100C9efdd2203b
-              </span>
+          {/* Contract Address */}
+          <div className="mb-6">
+            <div className="bg-white text-black px-4 py-2 rounded-lg font-mono text-md font-bold shadow-inner">
+              0xMemeLinkedContractAddress
             </div>
-            {/* Glowing Animated Ring */}
-            <div
-              className="absolute inset-0 rounded-full animate-spin-slow -z-10"
-              style={{
-                background:
-                  "conic-gradient(from 180deg at 50% 50%, #FF0000, #8A2BE2, #FF0000)",
-                filter: "blur(15px)",
-              }}
-            ></div>
+            <p className="text-md text-gray-400 mt-2">Official Contract Address</p>
           </div>
 
           {/* Social Media Links */}
-          <div className="bg-white/10 backdrop-blur-md p-4 rounded-xl shadow-2xl flex justify-center space-x-4 w-full mt-6">
-            <Link href="https://x.com/shadow_token/">
+          <div className="flex space-x-4">
+            <Link href="https://x.com/memelinked">
               <Image
                 src="/icons/x.png"
                 width={50}
                 height={50}
                 alt="Twitter"
-                className="rounded-full hover:scale-105 border-2 border-red-500 transition"
+                className="socials border-2 border-purple-400 hover:scale-110 hover:drop-shadow-lg transition-transform rounded-full"
               />
             </Link>
-            <Link href="https://t.me/shadowthehedgehog">
+            <Link href="https://t.me/memelinked">
               <Image
                 src="/icons/telegram.png"
                 width={50}
                 height={50}
                 alt="Telegram"
-                className="rounded-full hover:scale-105 border-2 border-red-500 transition"
+                className="socials border-2 border-green-400 hover:scale-110 hover:drop-shadow-lg transition-transform rounded-full"
               />
             </Link>
-            <Link href="https://dexscreener.com/sonic/shadow">
-              <Image
-                src="/icons/dexscreener.png"
-                width={50}
-                height={50}
-                alt="DexScreener"
-                className="rounded-full bg-white hover:scale-105 transition border-2 border-red-500"
-              />
-            </Link>
-            <Link href="https://www.dextools.io/app/en/sonic/pair-explorer/SHADOW">
+            <Link href="https://www.dextools.io/app/en/ether/pair-explorer/memelinked">
               <Image
                 src="/icons/dextools.png"
                 width={50}
                 height={50}
                 alt="DexTools"
-                className="rounded-full hover:scale-105 border-2 border-red-500"
+                className="socials border-2 border-purple-400 hover:scale-110 hover:drop-shadow-lg transition-transform rounded-full"
+              />
+            </Link>
+            <Link href="https://dexscreener.com/ethereum/memelinked">
+              <Image
+                src="/icons/dexscreener.png"
+                width={50}
+                height={50}
+                alt="DexScreener"
+                className="socials border-2 border-green-400 hover:scale-110 hover:drop-shadow-lg transition-transform rounded-full"
+              />
+            </Link>
+            <Link href="https://linktr.ee/memelinked">
+              <Image
+                src="/icons/linktree.png"
+                width={50}
+                height={50}
+                alt="Linktree"
+                className="socials border-2 border-purple-400 hover:scale-110 hover:drop-shadow-lg transition-transform rounded-full"
               />
             </Link>
           </div>

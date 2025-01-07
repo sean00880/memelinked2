@@ -5,47 +5,46 @@ import Image from "next/image";
 const TokenomicsSection: React.FC = () => {
   return (
     <section
-      className="tokenomics-section py-20 px-6 md:px-12 bg-gradient-to-b from-black via-[#1a1a1a] to-black text-white relative overflow-hidden"
+      className="tokenomics-section min-h-screen py-20 px-6 md:px-12 bg-gradient-to-b from-black via-[#1a1a1a] to-black text-white relative overflow-hidden"
       id="tokenomics"
     >
-      {/* Animated Background Effects */}
-      <div className="absolute inset-0 bg-gradient-to-b from-red-600 via-black to-black opacity-60 blur-2xl"></div>
-      <div className="absolute top-[-100px] left-[50%] transform -translate-x-1/2 w-[1200px] h-[1200px] bg-red-700/10 rounded-full animate-pulse"></div>
+      {/* Background Glow */}
+      <div className="absolute inset-0 bg-gradient-to-b min-h-screen from-black via-purple-900 to-black opacity-60 blur-2xl"></div>
+      <div className="absolute min-h-screen left-[50%] transform -translate-x-1/2 w-[1200px] bg-gradient-to-r from-green-black via-[#191919] to-black-500 rounded-full animate-pulse"></div>
 
       <div className="relative z-10 max-w-7xl mx-auto">
         {/* Section Title */}
-        <h2 className="text-5xl font-extrabold mb-16 text-center text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-white">
-          Shadow Tokenomics
+        <h2 className="text-5xl font-extrabold mb-16 text-center text-transparent bg-clip-text bg-gradient-to-r from-gray-300 via-gray-200 to-white">
+          MemeLinked Tokenomics
         </h2>
 
         {/* Interactive Rotational Layout */}
-        <div className="relative w-full h-[600px] md:h-[700px] flex items-center justify-center">
+        <div className="relative w-full h-auto md:h-[700px] flex flex-wrap items-center justify-center">
           {/* Rotational Centerpiece */}
-          <div className="relative w-[300px] h-[300px] md:w-[400px] md:h-[400px] bg-black/70 rounded-full shadow-lg flex flex-col items-center justify-center backdrop-blur-lg">
-            <div className="absolute inset-0 animate-spin-slow border-t-4 border-red-500 rounded-full"></div>
-            <div className="absolute inset-4 animate-spin-reverse border-t-2 border-white rounded-full"></div>
-            <h3 className="text-xl font-semibold text-red-400 mb-2 text-center">
-              Total Supply
-            </h3>
-            <p className="text-3xl font-bold text-white">1 Billion</p>
-            <p className="text-sm text-gray-400 mt-1 text-center">
-              A robust supply fueling growth and scalability.
-            </p>
+          <div className="relative w-[250px] h-[250px] md:w-[350px] md:h-[350px] bg-black/70 rounded-full shadow-lg flex items-center justify-center backdrop-blur-lg m-4">
+            <div className="absolute inset-0 animate-spin-slow border-t-4 border-black rounded-full"></div>
+            <div className="absolute inset-4 animate-spin-reverse border-t-2 border-purple-400 rounded-full"></div>
+            {/* Central Image */}
+            <Image
+              src="/images/ML.gif" // Replace with the actual image path
+              alt="Central Display"
+              className="z-10 w-[120px] h-[120px] md:w-[150px] md:h-[150px] rounded-full"
+              width={150}
+              height={150}
+            />
           </div>
 
           {/* Rotational Elements */}
-          <div className="absolute w-full h-full flex items-center justify-center">
+          <div className="flex flex-wrap justify-center md:justify-evenly gap-6 md:gap-12">
             {/* Point 1 */}
-            <div
-              className="absolute w-[150px] h-[150px] bg-black/70 backdrop-blur-lg rounded-lg shadow-lg flex flex-col items-center justify-center text-center transform hover:scale-110 transition-all duration-300"
-              style={{ transform: "translate(-250px, -50px)" }}
-            >
-              <h4 className="text-md font-semibold text-red-400">
+            <div className="w-[31vh] h-[27vh] bg-black/70 backdrop-blur-lg p-4 rounded-lg shadow-lg flex flex-col items-center justify-center text-center transform hover:scale-110 transition-all duration-300">
+              <h4 className="text-md font-semibold text-green-400">
                 Transaction Tax
               </h4>
-              <p className="text-sm text-gray-300 mt-2">
+              <p className="text-md text-gray-300 mt-2">
                 <strong className="text-white">Buy:</strong> 0% <br />
-                <strong className="text-white">Sell:</strong> 0%
+                <strong className="text-white">Sell:</strong> 0% <br />
+                <strong className="text-white">Transfer:</strong> 4%
               </p>
               <p className="text-xs text-gray-400 mt-1">
                 Ensuring fairness and transparency.
@@ -53,76 +52,44 @@ const TokenomicsSection: React.FC = () => {
             </div>
 
             {/* Point 2 */}
-            <div
-              className="absolute w-[150px] h-[150px] bg-black/70 backdrop-blur-lg rounded-lg shadow-lg flex flex-col items-center justify-center text-center transform hover:scale-110 transition-all duration-300"
-              style={{ transform: "translate(250px, -50px)" }}
-            >
-              <h4 className="text-md font-semibold text-red-400">
+            <div className="w-[31vh] h-[27vh] bg-black/70 backdrop-blur-lg p-4 rounded-lg shadow-lg flex flex-col items-center justify-center text-center transform hover:scale-110 transition-all duration-300">
+              <h4 className="text-md font-semibold text-green-400">
                 Chaos Energy
               </h4>
-              <p className="text-sm text-gray-300 mt-2">
+              <p className="text-md text-gray-300 mt-2">
                 Powering unmatched scalability and speed.
               </p>
             </div>
 
             {/* Point 3 */}
-            <div
-              className="absolute w-[150px] h-[150px] bg-black/70 backdrop-blur-lg rounded-lg shadow-lg flex flex-col items-center justify-center text-center transform hover:scale-110 transition-all duration-300"
-              style={{ transform: "translate(-250px, 150px)" }}
-            >
-              <h4 className="text-md font-semibold text-red-400">
+            <div className="w-[31vh] h-[27vh] bg-black/70 backdrop-blur-lg p-4 rounded-lg shadow-lg flex flex-col items-center justify-center text-center transform hover:scale-110 transition-all duration-300">
+              <h4 className="text-md font-semibold text-green-400">
                 Community Rewards
               </h4>
-              <p className="text-sm text-gray-300 mt-2">
+              <p className="text-md text-gray-300 mt-2">
                 Incentives and rewards for active participants.
               </p>
             </div>
 
             {/* Point 4 */}
-            <div
-              className="absolute w-[150px] h-[150px] bg-black/70 backdrop-blur-lg rounded-lg shadow-lg flex flex-col items-center justify-center text-center transform hover:scale-110 transition-all duration-300"
-              style={{ transform: "translate(250px, 150px)" }}
-            >
-              <h4 className="text-md font-semibold text-red-400">
+            <div className="w-[31vh] h-[27vh] bg-black/70 backdrop-blur-lg p-4 rounded-lg shadow-lg flex flex-col items-center justify-center text-center transform hover:scale-110 transition-all duration-300">
+              <h4 className="text-md font-semibold text-green-400">
                 Future Expansion
               </h4>
-              <p className="text-sm text-gray-300 mt-2">
+              <p className="text-md text-gray-300 mt-2">
                 Scaling the ecosystem with innovative utilities.
               </p>
             </div>
           </div>
         </div>
 
-        {/* Timeline Reveal Animation */}
-        <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-12">
-          <div className="relative p-6 bg-black/70 rounded-xl shadow-lg backdrop-blur-lg hover:scale-105 transition-transform duration-300">
-            <h4 className="text-xl font-semibold text-red-400 mb-4">
-              Zero Transaction Tax
-            </h4>
-            <p className="text-gray-300">
-              Ensures a fair and open environment, maximizing community participation.
-            </p>
-          </div>
-          <div className="relative p-6 bg-black/70 rounded-xl shadow-lg backdrop-blur-lg hover:scale-105 transition-transform duration-300">
-            <h4 className="text-xl font-semibold text-red-400 mb-4">
-              Chaos Energy Utility
-            </h4>
-            <p className="text-gray-300">
-              Harnesses the power of Chaos Energy to fuel DeFi and GameFi with
-              unmatched speed and scalability.
-            </p>
-          </div>
-        </div>
-
-        {/* Bottom Visual */}
-        <div className="mt-16 flex justify-center">
-          <Image
-            src="/images/shadow.gif"
-            alt="Shadow Tokenomics Hero Art"
-            width={500}
-            height={400}
-            className="rounded-lg shadow-[0_0_30px_rgba(255,0,0,0.8)] hover:scale-105 transition-transform"
-          />
+        {/* Text Below Animating Widget */}
+        <div className="mt-[40vh] text-center">
+          <h3 className="text-3xl font-bold text-green-400">Total Supply</h3>
+          <p className="text-xl font-semibold text-white">1 Billion</p>
+          <p className="text-md text-gray-400 mt-1">
+            A robust supply fueling growth and scalability.
+          </p>
         </div>
       </div>
 

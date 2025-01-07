@@ -40,11 +40,11 @@ const features = [
 const HomePage: React.FC = () => {
   const [activeTab, setActiveTab] = useState("blog"); // This is for the Blog/Documentation section
   const images = [
-    "/images/meme1.webp",
-    "/images/meme2.jpg",
-    "/images/meme3.webp",
-    "/images/meme4.jpeg",
-    "/images/meme5.jpeg",
+    "/images/ML2.webp",
+    "/images/ML11.webp",
+    "/images/ML4.png",
+    "/images/ML5.png",
+    "/images/ML8.png",
   ];
 
   return (

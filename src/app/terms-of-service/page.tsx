@@ -8,7 +8,7 @@ export default function TermsOfService() {
       {/* Background Gradient */}
       <div className="absolute inset-0 bg-gradient-to-b from-black via-green-700 to-purple-700 opacity-50 blur-2xl animate-pulse"></div>
 
-      <div className="relative z-10 max-w-6xl mx-auto">
+      <div className="relative z-10 max-w-7xl mx-auto">
         {/* Section Title */}
         <h1 className="text-5xl font-extrabold mb-6 text-center text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-purple-500">
           Terms of Service
